@@ -1,0 +1,29 @@
+title Exercise 0.4 : new note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note \n new note data send as application/x-www-form-urlencoded
+
+note over server: server creates a new note \n object, and adds it to an array. 
+
+server-->browser: URL Redirect request to https://studies.cs.helsinki.fi/exampleapp/notes
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+server-->browser: HTML-code
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server-->browser: main.css
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+server-->browser: main.js
+
+note over browser: browser starts executing js-code \n that requests JSON data from server 
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+server-->browser: [{ content: "note", date: "2021-11-16T06:54:23.092Z"},...]
+
+note over browser: browser executes the event handler \n and that renders notes to display
+
+

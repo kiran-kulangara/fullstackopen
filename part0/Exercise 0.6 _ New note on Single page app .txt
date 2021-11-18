@@ -1,0 +1,9 @@
+title Exercise 0.6 : New note on Single page app 
+
+note over browser: event handler creates a new note, \n adds it to the notes list, \n then rerenders the note list on the page \n and sends the new note to the server.
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa \n new note data send as application/json
+
+server-->browser: response status code 201 with \n application/json response {"message":"note created"}
+
+
