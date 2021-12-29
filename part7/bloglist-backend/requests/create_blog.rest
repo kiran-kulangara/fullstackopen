@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Sample 4",
+    "author": "Shakesphere 4",
+    "url": "http://sampleurl4",
+    "likes": 434
+}
